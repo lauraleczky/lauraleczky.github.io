@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Nyári pihenés</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <img src="img/header01.jpg" alt="strand">
+        </header>
+
+        <div class="layout">
+            <aside>
+                <nav>
+                    <ul>
+                        <li><a href="#balaton">Balaton</a></li>
+                        <li><a href="#tisza">Tisza-tó</a></li>
+                        <li><a href="#szelidi">Szelidi-tó</a></li>
+                    </ul>
+                </nav>
+
+                <h2>Kérem töltse ki a jelentkezési űrlapot</h2>
+
+                <form>
+                    <label for="nev">Név*</label>
+                    <input type="text" id="nev" name="nev" required maxlength="50" placeholder="Teljes név">
+
+                    <label for="email">E-mail cím*</label>
+                    <input type="email" id="email" name="email" required placeholder="email@pelda.hu">
+
+                    <label for="telefon">Telefonszám</label>
+                    <input type="tel" id="telefon" name="telefon" maxlength="20" placeholder="+36...">
+
+                    <label for="to">Melyik tó érdekli?</label>
+                    <select id="to" name="to">
+                        <option>Balaton</option>
+                        <option>Tisza-tó</option>
+                        <option>Szelidi-tó</option>
+                    </select>
+
+                    <label>Milyen szállást keres?</label>
+                    <div class="group">
+                        <label><input type="checkbox" name="szallas" value="szalloda">Szálloda</label>
+                        <label><input type="checkbox" name="szallas" value="apartman">Apartmanház</label>
+                        <label><input type="checkbox" name="szallas" value="kemping">Kemping</label>
+                    </div>
+
+                    <label>Milyen ellátás legyen?</label>
+                    <div class="group">
+                        <label><input type="radio" name="ellatas" required>Teljes panzió</label>
+                        <label><input type="radio" name="ellatas">Félpanzió</label>
+                        <label><input type="radio" name="ellatas">Csak reggeli</label>
+                        <label><input type="radio" name="ellatas">Nem kérek ellátást</label>
+                    </div>
+
+                    <label for="uzenet">Egyéb üzenet</label>
+                    <textarea id="uzenet" name="uzenet" rows="4" maxlength="300"
+                        placeholder="Max. 300 karakter"></textarea>
+
+                    <button type="submit">Mehet</button>
+                </form>
+            </aside>
+
+            <main>
+                <section id="balaton">
+                    <img src="img/balaton02.jpg" alt="Balaton">
+                    <h2>Balaton</h2>
+                    <p>
+                        A Balaton Magyarország legnagyobb tava, amely évről évre turisták millióit vonzza. Sekély vize
+                        miatt családok számára is ideális választás. A déli part homokos strandjai kiválóak fürdőzéshez,
+                        míg az északi part inkább a kirándulóknak kedvez. Számos kultúrális program és fesztivál várja
+                        az ide látógatókat. A Balaton környéke gasztronómiai élményekben is gazdag, kerékpárral is
+                        könnyen bejárható.
+                    </p>
+                </section>
+
+                <section id="tisza">
+                    <img src="img/tiszato03.jpg" alt="Tisza-tó">
+                    <h2>Tisza-tó</h2>
+                    <p>
+                        A Tisza-tó (1988-ig Kiskörei víztározó) Magyarország második legnagyobb tava és legnagyobb
+                        mesterséges tava a Tiszán, az Alföld északi részén. Létrehozásának legfontosabb okai a Kiskörei
+                        Vízerőmű működéséhez szükséges egyenletes vízhozam biztosítása volt, valamint az ugyanebben az
+                        időszakban, Tiszaújvárosban épült Tiszai Hőerőmű hűtővíz igényéhez szükséges magas vízszint
+                        biztosítása duzzasztással.
+                    </p>
+                </section>
+
+                <section id="szelidi">
+                    <img src="img/szelidi04.jpg" alt="Szelidi-tó">
+                    <h2>Szelidi-tó</h2>
+                    <p>
+                        A Szelidi-tó Magyarország ötödik legnagyobb természetes állóvize, amely Bács-Kiskun megyében,
+                        Dunapataj külterületén található. A tó hossza 5 km, szélessége 150-200 m, és mélysége 3-4 m,
+                        vízfelülete körülbelül 80 hektár. A Szelidi-tó a Duna egykori mellékágából keletkezett, és 1976
+                        óta természetvédelmi terület, amely kedvelt kiránduló- és üdülőhely, homokos strandokkal és
+                        gyógyító vízével.
+                    </p>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            2025-Tavaink világa
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
