@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Atial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/*Header */
+.top-bar {
+    background-color: #FFE48E;
+    padding: 15px 30px;
+    text-align: right;
+}
+
+#loginBtn {
+    background-color: white;
+    border: 2px solid #333;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#loginBtn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    background-color: #FFE4E8;
+    text-align: center;
+    padding: 30px;
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    letter-spacing: 3px;
+}
+
+/*Navigáció */
+nav {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #FFE4E8;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #FF8FA3;
+}
+
+/*Hero szekció */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30 px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px 60px;
+    border-radius: 10px;
+}
+
+.hero-text h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/*Kupon */
+.coupon-banner {
+    background-color: #FFC4D0;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.coupon-banner:hover {
+    background-color: #FFB3C1;
+}
+
+/*Main */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    pad: 40px 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/*Termékek */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #FFE4E8;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)
+}
+
+.product:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #FF8FA3;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.cart-btn {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.cart-btn:hover {
+    background-color: #FF8FA3;
+}
+
+/*Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.modal-content {
+    background-color: white;
+    width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #FF8FA3;
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.modal-content button:hover {
+    background-color: #FF8FA3;
+}
+
+.register-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-text a {
+    color: #FF8FA3;
+    text-decoration: none
+}
+
+.coupon-message {
+    color: #FF8FA3;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*Footer */
+footer {
+    background-color: #FFE4E8;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-links {
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-links a:hover {
+    color: #FF8FA3;
+}
+
+/*Reszponzív Design */
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero.text h2 {
+        font-size: 1.8em;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .logo h1 {
+        font-size: 1.8em;
+    }
+
+    .hero {
+        height: 250px;
+    }
+
+    .hero-text h2 {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamiére Beauty-Makeup Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!--Belépés-->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Belépés</h2>
+            <form id="loginForm">
+                <label>Felhasználónév:</label>
+                <input type="text" id="username" required>
+
+                <label>Jelszó:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit">Belépés</button>
+            </form>
+            <p class="register-text">Nincs mg fiókod? <a href="#">Itt tudsz regisztrálni</a></p>
+        </div>
+    </div>
+
+    <!--Kupon-->
+    <div id="couponModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Gratulálok!</h2>
+            <p class="coupon-message">25% kedvezmény első 10 feliratkozónak!</p>
+            <p>Vedd fel velünk a kapcsolatot a részletekért!</p>
+            <form id="couponForm">
+                <input type="email" id="email" placeholder="valami@gmail.com" required>
+                <button type="submit">Küldés</button>
+            </form>
+        </div>
+    </div>
+
+     <!--Header-->
+        <header>
+            <div class="top-bar">
+                <button id="loginBtn">Belépés</button>
+            </div>
+
+            <div class="logo">
+                <h1>Lamiére Beauty</h1>
+            </div>
+
+            <nav>
+                <a href="#palettes">Paletták</a>
+                <a href="#powders">Púderek</a>
+                <a href="#mascaras">Szempillaspirálok</a>
+                <a href="#lipsticks">Rúzsok</a>
+                <a href="#highlighters">Egyéb</a>
+
+            </nav>
+        </header>
+
+        <!--Háttér-->
+        <div class="hero">
+            <img src="img/Hatter16.jpg" alt="Makeup">
+            <div class="hero-text">
+                <h2>Találd meg a tökéletes árnyalatot</h2>
+            </div>
+        </div>
+
+        <!--Kupon Banner-->
+        <div class="coupon-banner" id="couponBanner">
+            <p>🎁Spórolj 25%-ot első rendelésedből! Kattints ide!</p>
+        </div>
+
+         <!--Termékek-->
+        <main>
+        <section id="palettes">
+            <h2>Smink paletták</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="img/Paletta01.jpg" alt="Palette">
+                    <h3>Sunset Dream Paletta</h3>
+                    <p class="price">42€</p>
+                    <button class="cart-btn">Kosárba</button>
+                </div>
+                <div class="product">
+                    <img src="img/Paletta08.jpg" alt="Palette">
+                    <h3>Nude Essentials</h3>
+                    <p class="price">45€</p>
+                    <button class="cart-btn">Kosárba</button>
+                </div>
+                <div class="product">
+                    <img src="img/Szempaletta02.jpg" alt="Palette">
+                    <h3>Smokey Collection</h3>
+                    <p class="price">35€</p>
+                    <button class="cart-btn">Kosárba</button>
+            </div>
+        </section>
+    </div>
+
+     <!--Púderek-->
+    <section id="powders">
+        <h2>Púderek</h2>
+        <div class="products">
+                <div class="product">
+                    <img src="img/Puder07.jpg" alt="Powder">
+                    <h3>Fixáló púder</h3>
+                    <p class="price">45€</p>
+                    <button class="cart-btn">Kosárba</button>
+                </div>
+                <div class="product">
+                    <img src="img/Alapozo04.jpg" alt="Cover">
+                    <h3>Full Face Cover</h3>
+                    <p class="price">65€</p>
+                    <button class="cart-btn">Kosárba</button>
+                </div>
+                <div class="product">
+                    <img src="img/Essentialdrop09.jpg" alt="Blush">
+                    <h3>Golden Drops</h3>
+                    <p class="price">50€</p>
+                    <button class="cart-btn">Kosárba</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Spirálok-->
+    <section id="mascaras">
+        <h2>Szempillaspirálok</h2>
+        <div class="products">
+                <div class="product">
+                    <img src="img/Spiral06.jpg" alt="Mascara">
+                    <h3>Volume Lux Szempillaspirál</h3>
+                    <p class="price">35€</p>
+                    <button class="cart-btn">Kosárba</button>
+                </div>
+                <div class="product">
+                    <img src="img/Spiral18.jpg" alt="Mascara">
+                    <h3>Infinity Length vízálló Szempillaspirál</h3>
+                    <p class="price">38€</p>
+                    <button class="cart-btn">Kosárba</button>
+                </div>
+                <div class="product">
+                    <img src="img/Tus11.jpg" alt="Eyeliner">
+                    <h3>Liquidlast 24 hour liner </h3>
+                    <p class="price">42€</p>
+                    <button class="cart-btn">Kosárba</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Rúzsok-->
+    <section id="lipsticks">
+        <h2>Rúzsok</h2>
+        <div class="products">
+                <div class="product">
+                    <img src="img/Ruzs14.jpg" alt="Lipstick">
+                    <h3>Velvet Matte Rose</h3>
+                    <p class="price">30€</p>
+                    <button class="cart-btn">Kosárba</button>
+                </div>
+                <div class="product">
+                    <img src="img/Szajfeny13.jpg" alt="Lipgloss">
+                    <h3>Bush Pink Shimer</h3>
+                    <p class="price">25€</p>
+                    <button class="cart-btn">Kosárba</button>
+                </div>
+                <div class="product">
+                    <img src="img/Szajceruza10.jpg" alt="Lipliner">
+                    <h3>Lip Liner</h3>
+                    <p class="price">20€</p>
+                    <button class="cart-btn">Kosárba</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Kiegészítők-->
+    <section id="highlighters">
+        <h2>Highlighterek</h2>
+        <div class="products">
+                <div class="product">
+                    <img src="img/Highlighter12.jpg" alt="Highlighter">
+                    <h3>Sparkley Highlighter</h3>
+                    <p class="price">55€</p>
+                    <button class="cart-btn">Kosárba</button>
+                </div>
+                <div class="product">
+                    <img src="img/Fixalo15.jpg" alt="Settingspray">
+                    <h3>Long Lasting Setting Spray</h3>
+                    <p class="price">45€</p>
+                    <button class="cart-btn">Kosárba</button>
+                </div>
+                <div class="product">
+                    <img src="img/Sminklemoso05.jpg" alt="Makeupremover">
+                    <h3>Sminklemosó érzékeny bőrre</h3>
+                    <p class="price">25€</p>
+                    <button class="cart-btn">Kosárba</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!--Footer-->
+<footer>
+    <p>&copy; 2026 Lamiére Store. Minden jog fenntartva.</p>
+    <div class="footer-links">
+        <a href="#">Rólunk</a>
+        <a href="#">Elérhetőség</a>
+        <a href="#">ÁSZF</a>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
